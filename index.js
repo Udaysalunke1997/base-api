@@ -9,7 +9,8 @@ app.get('/', (req, res) => {
     res.send('Hello run uday dsds')
 });
 
-app.get('/api/products', async (req, res) => {
+//for fetching all product details .
+app.get('/api/allproducts', async (req, res) => {
     try {
         const products = await Product.find({});
         res.status(200).json(products);
@@ -18,7 +19,8 @@ app.get('/api/products', async (req, res) => {
     }
 });
 
-app.get('/api/product/:id', async (req, res) => {
+// for fetching single product details
+app.get('/api/singleproduct/:id', async (req, res) => {
     try {
         const { id } = req.params;
         const product = await Product.findById(id);
@@ -28,8 +30,8 @@ app.get('/api/product/:id', async (req, res) => {
     }
 });
 
-
-app.post('/api/products', async (req, res) => {
+// for adding product
+app.post('/api/addproduct', async (req, res) => {
     try {
        const product = await Product.create(req.body);
         res.status(200).json(product);
@@ -39,8 +41,8 @@ app.post('/api/products', async (req, res) => {
 });
 
 
-// Update product
-app.put('/api/product/:id', async (req, res) => {
+// Update product by id
+app.put('/api/updateproduct/:id', async (req, res) => {
     try {
         const { id } = req.params;
         const product = await Product.findByIdAndUpdate(id, req.body);
@@ -56,8 +58,8 @@ app.put('/api/product/:id', async (req, res) => {
      }
 })
 
-// Delete product
-app.delete('/api/product/:id', async (req, res) => {
+// Delete product by id
+app.delete('/api/deleteproduct/:id', async (req, res) => {
     try {
         const { id } = req.params;
         const product = await Product.findByIdAndDelete(id);

@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "title": "post 1",
+      "body": "Post content added here",
+      "id": "80cc52d0-c6a0-4f7c-a493-2375f17e6e59"
+    },
+    {
+      "id": "a3b7c8d9-e123-4567-f890-abcdef1234544",
+      "title": "qui est esse",
+      "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+    },
+    {
+      "id": "a3b7c8d9-e123-4567-f890-abcdef123422",
+      "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+      "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+    }
+  ]
+}
